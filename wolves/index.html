@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=../pdfjs/web/viewer.html?file=Wolf_Head_Manual.pdf">
-    <title>Redirecting...</title>
-    <script>
-        // JavaScript 作为备用跳转方式
-        setTimeout(function () {
-            window.location.href = "../pdfjs/web/viewer.html?file=Wolf_Head_Manual.pdf";
-        }, 0);
-    </script>
+    <title>Embedded PDF Viewer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="../pdfjs/web/viewer.html?file=Wolf_Head_Manual.pdf">click here</a>.</p>
+    <iframe src="../pdfjs/web/viewer.html?file=Wolf_Head_Manual.pdf"></iframe>
 </body>
 </html>
